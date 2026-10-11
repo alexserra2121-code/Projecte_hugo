@@ -1,0 +1,52 @@
+
+baseURL = 'http://localhost:1313/'
+locale = 'es'
+title = 'TecnoCat S.L'
+theme = 'PaperMod'
+enableRobotsTXT = true
+
+[params]
+  env = 'development'
+  title = 'Innovació tecnològica i automatització de sistemes'
+  description = 'Aprendiendo programación y tecnología.'
+  author = 'Tu nombre'
+  defaultTheme = 'auto'
+  mainSections = ['posts']
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowToc = true
+
+  [params.homeInfoParams]
+    Title = 'Innovació tecnològica i automatització de sistemes'
+    Content = 'Benvinguts a TecnoCat S.L., una empresa dedicada a la tecnologia, administració de sistemes i l automatització de processos informàtics mitjançant eines de programari lliure.'
+
+    
+
+[menu]
+  [[menu.main]]
+    identifier = 'archives'
+    name = 'Contacte'
+    url = '/archives/'
+    weight = 10
+
+  [[menu.main]]
+    identifier = 'search'
+    name = 'Nosaltres'
+    url = '/search/'
+    weight = 20
+
+  [[menu.main]]
+    identifier = 'tags'
+    name = 'Projectes'
+    url = '/tags/'
+    weight = 30
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+[pagination]
+  pagerSize = 100

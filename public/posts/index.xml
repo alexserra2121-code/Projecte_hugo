@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on TecnoCat S.L</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on TecnoCat S.L</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Sun, 11 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Curiositats sobre Linux</title>
+      <link>http://localhost:1313/posts/article_linux/</link>
+      <pubDate>Sun, 11 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/article_linux/</guid>
+      <description>Descobreix curiositats, ordres bàsiques i projectes d&amp;rsquo;automatització amb Linux.</description>
+    </item>
+    <item>
+      <title>Curiositats sobre Linux 2</title>
+      <link>http://localhost:1313/posts/article_linux.2/</link>
+      <pubDate>Sun, 11 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/article_linux.2/</guid>
+      <description>Descobreix curiositats, ordres bàsiques i projectes d&amp;rsquo;automatització amb Linux.</description>
+    </item>
+    <item>
+      <title>Curiositats sobre xarxes</title>
+      <link>http://localhost:1313/posts/article_xarxes/</link>
+      <pubDate>Sun, 11 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/article_xarxes/</guid>
+      <description>Descobreix curiositats, ordres bàsiques i projectes d&amp;rsquo;automatització amb Linux.</description>
+    </item>
+    <item>
+      <title>Curiositats sobre xarxes 2</title>
+      <link>http://localhost:1313/posts/article_xarxes2/</link>
+      <pubDate>Sat, 10 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/article_xarxes2/</guid>
+      <description>Descobreix curiositats, ordres bàsiques i projectes d&amp;rsquo;automatització amb Linux.</description>
+    </item>
+  </channel>
+</rss>

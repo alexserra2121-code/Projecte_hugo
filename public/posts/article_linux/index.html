@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Curiositats sobre Linux | TecnoCat S.L</title>
+<meta name="keywords" content="">
+<meta name="description" content="Descobreix curiositats, ordres bàsiques i projectes d&rsquo;automatització amb Linux.">
+<meta name="author" content="Tu nombre">
+<link rel="canonical" href="http://localhost:1313/posts/article_linux/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.89ca4972ab5e6aaa05e9a0dae0c4bb64b26585bc79e36f5cf33614eea0283abe.css" integrity="sha256-icpJcqteaqoF6aDa4MS7ZLJlhbx5429c8zYU7qAoOr4=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/article_linux/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="TecnoCat S.L (Alt + H)">TecnoCat S.L</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/archives/" title="Contacte">
+                    <span>Contacte</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="Nosaltres">
+                    <span>Nosaltres</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Projectes">
+                    <span>Projectes</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">Inicio</a>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <a href="/posts/">Posts</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+    <h1 class="post-title entry-hint-parent">
+      Curiositats sobre Linux
+    </h1>
+    <div class="post-meta">
+
+<span title='2026-10-11 00:00:00 +0000 UTC'>11 de octubre de 2026</span>&nbsp;·&nbsp;<span>3 min</span>&nbsp;·&nbsp;<span>460 palabras</span>&nbsp;·&nbsp;<span>Tu nombre</span>
+
+</div>
+  </header> <details class="toc" >
+    <summary accesskey="c" title="(Alt + C)">
+        <span class="title">Tabla de Contenidos</span>
+    </summary>
+
+    <div class="inner"><ul>
+            <li>
+                <a href="#curiostiats-sobre-linux" aria-label="Curiostiats sobre Linux">Curiostiats sobre Linux</a><ul>
+                    
+            <li>
+                <a href="#com-va-comen%c3%a7ar-linux" aria-label="Com va començar Linux?">Com va començar Linux?</a></li>
+            <li>
+                <a href="#com-podem-administrar-linux" aria-label="Com podem administrar Linux?">Com podem administrar Linux?</a></li>
+            <li>
+                <a href="#quins-projectes-d" aria-label="Quins projectes d&rsquo;automatització podem fer?">Quins projectes d&rsquo;automatització podem fer?</a><ul>
+                    
+            <li>
+                <a href="#projectes-senzills" aria-label="Projectes Senzills">Projectes Senzills</a></li>
+            <li>
+                <a href="#projectes-mitjans" aria-label="Projectes Mitjans">Projectes Mitjans</a></li>
+            <li>
+                <a href="#projectes-complexos" aria-label="Projectes Complexos">Projectes Complexos</a>
+            </li>
+        </ul>
+        </li>
+        </ul>
+        </li>
+        </ul>
+    </div>
+</details>
+
+  <div class="post-content md-content"><h1 id="curiostiats-sobre-linux"><strong>Curiostiats sobre Linux</strong><a hidden class="anchor" aria-hidden="true" href="#curiostiats-sobre-linux">#</a></h1>
+<p>En aquest article especific tractarem moltes curiositats sobre Linux com ara la historia, comandes bàsiques d&rsquo;administració, posibles projectes d&rsquo;automatizació de procesos que podem realizar en aquests entorns i posibles aplicacions rellevants de codi lliure.</p>
+<h2 id="com-va-començar-linux"><em><strong>Com va començar Linux?</strong></em><a hidden class="anchor" aria-hidden="true" href="#com-va-començar-linux">#</a></h2>
+<p>Linux va començar com a un projecte universitari de l&rsquo;estudiant d&rsquo;enginyeria Linux Torbald, un estudiant de Ciencies de la computació de la Universitat de Helsinki, aquest va començar per demostrar que els sistemes operatius revolucionaris en la época podien ser lliures hi ha l&rsquo;abast de qualsevol persona, i va aprofitar l&rsquo;escussa d&rsquo;un treball escolar per tal de desenvolupar el primer nucli lliure de tota la historia.</p>
+<p>Un cop després que Linus Tovald dissenyes el nucli del sistema, el projecte va pasar a mans de Ken Thompson i Dennis Ritchie on el qual van aprofitar el kernel desenvolupat per crear el primer sistema operatiu lliure portátil, modificant el codi per poder-lo incloure en dispositius portables. Un cop fet aixó les diferents universitats dels Estats Units van començar a distribuir versions de Unix implementades en estacions de treball.</p>
+<p>Més endevant durant la década dels 80, Richard Stallman va iniciar el projecte GNU, que és tractava de aprofitar part del codi de Unix per desenvolupar un nou sistema operatiu lliure, amb un kernel diferente anomenat Hurd. Aquest implementava arquitectura modular i total llibertat per part dels usuàris per tal de modificar el codi i crear diferents sistemes independents, amb la obligació de compartir tots els resultats amb la comunitat per fer que el sistema lliure s&rsquo;expangues.</p>
+<p>Aquests dos sistemes Unix van ser els precausors per tal que és poguessin crear els diferents sistemes futurs que coneixem ara com:</p>
+<ul>
+<li>Ubuntu</li>
+<li>Debian</li>
+<li>Cache OS</li>
+<li>Kali Linux
+&hellip;</li>
+</ul>
+<h2 id="com-podem-administrar-linux"><em><strong>Com podem administrar Linux?</strong></em><a hidden class="anchor" aria-hidden="true" href="#com-podem-administrar-linux">#</a></h2>
+<p>Per tal de poder administrar Linux, ho podem fer amb comandes de terminal, un bon exemple de comandes bàsiques poden ser les seguents:</p>
+<p>|&mdash;&mdash;&mdash;&mdash;-|&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-|</p>
+<table>
+	<thead>
+			<tr>
+					<th>Comandes</th>
+					<th>Descripció</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>ls</td>
+					<td>Llista el contingut d&rsquo;un directori</td>
+			</tr>
+			<tr>
+					<td>cd</td>
+					<td>Cambiar el directori de treball</td>
+			</tr>
+			<tr>
+					<td>mkdir</td>
+					<td>Crear nous directoris</td>
+			</tr>
+			<tr>
+					<td>rm</td>
+					<td>Eliminar arxius o directoris</td>
+			</tr>
+			<tr>
+					<td>cp/mv</td>
+					<td>Copia/mou/renombra directoris</td>
+			</tr>
+			<tr>
+					<td>chmod/chown</td>
+					<td>Gestiona permisos i propietaris d&rsquo;arxius</td>
+			</tr>
+			<tr>
+					<td>systemctl</td>
+					<td>Controla serveis (Start/Stop/Status/Enable)</td>
+			</tr>
+			<tr>
+					<td>apt update</td>
+					<td>Actualitza la llista de paquets</td>
+			</tr>
+			<tr>
+					<td>apt upgrade</td>
+					<td>Reinstal·la tota la llista de paquets i actualitza</td>
+			</tr>
+			<tr>
+					<td>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</td>
+					<td></td>
+			</tr>
+	</tbody>
+</table>
+<h2 id="quins-projectes-d"><em><strong>Quins projectes d&rsquo;automatització podem fer?</strong></em><a hidden class="anchor" aria-hidden="true" href="#quins-projectes-d">#</a></h2>
+<p>Per tal d&rsquo;organitzar les idees dividirem el bloc de projectes en tres grans apartats senzills, mitjà, complexes, aquestes ón:</p>
+<h3 id="projectes-senzills"><em>Projectes Senzills</em><a hidden class="anchor" aria-hidden="true" href="#projectes-senzills">#</a></h3>
+<ul>
+<li>Copies de seguretat automatiques.</li>
+<li>Neteja automática del sistema com ara eliminar fitxers temporals, eliminar logs antics…</li>
+<li>Monitoritzar l&rsquo;espai del disc.</li>
+</ul>
+<h3 id="projectes-mitjans"><em>Projectes Mitjans</em><a hidden class="anchor" aria-hidden="true" href="#projectes-mitjans">#</a></h3>
+<ul>
+<li>Script que comprova que servidors instal·lats están funcionant correctament.</li>
+<li>Monitorització d&rsquo;un servidor web com ports, connexions…</li>
+<li>Sistema automatic d&rsquo;usuaris.</li>
+</ul>
+<h3 id="projectes-complexos"><em>Projectes Complexos</em><a hidden class="anchor" aria-hidden="true" href="#projectes-complexos">#</a></h3>
+<ul>
+<li>Sistema de copies de seguretat amb la implementació d&rsquo;informes diaris i eliminación automática cada 30 dies.</li>
+<li>Creació d&rsquo;un servidor web automatic.</li>
+<li>Sistema de monitorització de servidors.</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="next" href="http://localhost:1313/posts/article_linux.2/">
+    <span class="title">Siguiente »</span>
+    <span>Curiositats sobre Linux 2</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">TecnoCat S.L</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copiar';
+
+        function copyingDone() {
+            copybutton.innerHTML = '¡copiado!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copiar';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
