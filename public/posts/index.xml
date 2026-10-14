@@ -6,8 +6,15 @@
     <description>Recent content in Posts on TecnoCat S.L</description>
     <generator>Hugo</generator>
     <language>es</language>
-    <lastBuildDate>Sun, 11 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Serveis</title>
+      <link>http://localhost:1313/posts/article_serveis/</link>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/article_serveis/</guid>
+      <description>Explicació sobre que son i exemples</description>
+    </item>
     <item>
       <title>Curiositats sobre Linux</title>
       <link>http://localhost:1313/posts/article_linux/</link>
@@ -30,11 +37,51 @@
       <description>Descobreix curiositats, ordres bàsiques i projectes d&amp;rsquo;automatització amb Linux.</description>
     </item>
     <item>
+      <title>Apache</title>
+      <link>http://localhost:1313/posts/apche/</link>
+      <pubDate>Sat, 10 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/apche/</guid>
+      <description>&lt;h1 id=&#34;servidor-http-apache&#34;&gt;Servidor HTTP Apache&lt;/h1&gt;
+&lt;p&gt;Apache HTTP Server és un servidor HTTP (de pàgines web) de codi obert multiplataforma desenvolupat per Apache Software Foundation. Quan va començar el seu desenvolupament l&amp;rsquo;any 1995, es basava inicialment en el codi del popular NCSA HTTPd 1.3, però més tard es reescriuria completament. El servidor Apache es desenvolupa dins del projecte HTTP Server (httpd) de l&amp;rsquo;Apache Software Foundation.&lt;/p&gt;
+&lt;h2 id=&#34;ús&#34;&gt;Ús&lt;/h2&gt;
+&lt;p&gt;Apache és utilitzat principalment per a servir tant contingut estàtic i pàgines web dinàmiques a la World Wide Web. Moltes aplicacions web s&amp;rsquo;han dissenyat fent servir l&amp;rsquo;entorn i les funcionalitats que Apache ofereix. Apache és el component de servidor web del popular paquet LAMP, que també inclou MySQL i els llenguatges de programació PHP/Perl/Python.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Curiositats sobre xarxes 2</title>
       <link>http://localhost:1313/posts/article_xarxes2/</link>
       <pubDate>Sat, 10 Oct 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/article_xarxes2/</guid>
       <description>Descobreix curiositats, ordres bàsiques i projectes d&amp;rsquo;automatització amb Linux.</description>
+    </item>
+    <item>
+      <title>Http</title>
+      <link>http://localhost:1313/posts/http/</link>
+      <pubDate>Sat, 10 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/http/</guid>
+      <description>&lt;h1 id=&#34;protocol-de-transferència-dhipertext-http&#34;&gt;Protocol de transferència d&amp;rsquo;hipertext (HTTP)&lt;/h1&gt;
+&lt;p&gt;El protocol de transferència d&amp;rsquo;hipertext o HTTP (HyperText Transfer Protocol) estableix el protocol per a l&amp;rsquo;intercanvi de documents d&amp;rsquo;hipertext i multimèdia al web. HTTP disposa d&amp;rsquo;una variant xifrada mitjançant SSL anomenada HTTPS.&lt;/p&gt;
+&lt;h2 id=&#34;codis-destat-http&#34;&gt;Codi&amp;rsquo;s d&amp;rsquo;estat HTTP&lt;/h2&gt;
+&lt;p&gt;La primera línia d&amp;rsquo;una resposta HTTP s&amp;rsquo;anomena &amp;lsquo;status line&amp;rsquo;. Aquesta línia conté un codi numèric anomenat &amp;lsquo;status code&amp;rsquo; i va acompanyat d&amp;rsquo;un petit text que descriu el codi retornat. El primer dígit de l&amp;rsquo;status code indica de quin tipus de resposta es tracta. Si un client no reconeix un status code concret, almenys pot utilitzar el primer digit per conèixer la seva família.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Samba</title>
+      <link>http://localhost:1313/posts/samba/</link>
+      <pubDate>Sat, 10 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/samba/</guid>
+      <description>&lt;h1 id=&#34;samba&#34;&gt;Samba&lt;/h1&gt;
+&lt;p&gt;Samba és una reimplementació en programari lliure del protocol de xarxa SMB/CIFS de Microsoft. Des de la versió 3, Samba no només proveeix de serveis d&amp;rsquo;impressió i fitxers per diversos clients de Microsoft Windows, sinó que també es pot integrar amb un domini de Windows Server, sigui un PDC o un Domain Member. També pot ser part d&amp;rsquo;un domini Active Directory.&lt;/p&gt;
+&lt;h2 id=&#34;història&#34;&gt;Història&lt;/h2&gt;
+&lt;p&gt;Samba va ser originalment desenvolupat per UNIX per Andrew Tridgell a l&amp;rsquo;Australian National University, usant enginyeria inversa al protocol usat pel servidor DEC PATHWORKS utilitzant un sniffer. Més tard, Tridgell va descobrir que el protocol era gairebé idèntic als usats en altres sistemes de servidor per xarxa, incloent el de Microsoft anomenat LAN Manager, i va decidir centrar-se amb la compatibilitat amb servidors Windows.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SSH</title>
+      <link>http://localhost:1313/posts/ssh/</link>
+      <pubDate>Sat, 10 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/ssh/</guid>
+      <description>&lt;h1 id=&#34;ssh&#34;&gt;SSH&lt;/h1&gt;
+&lt;p&gt;Secure Shell (abreujat SSH) és un protocol de xarxa criptogràfica i un paquet de programes per accedir a màquines remotes de manera segura a través xarxes insegures. Permet gestionar l&amp;rsquo;ordinador distant. Gairebé tots els sistemes operatius inclouen clients del protocol basats en la implementació OpenSSH com ara Linux, macOS i Windows 10.&lt;/p&gt;
+&lt;h2 id=&#34;utilitat-de-ssh&#34;&gt;Utilitat de SSH&lt;/h2&gt;
+&lt;p&gt;SSH treballa de forma similar al telnet. La diferència principal és que SSH fa servir tècniques de xifrat que transmet la informació per la xarxa de manera il·legible. Cap persona pot descobrir l&amp;rsquo;usuari i la contrasenya de la connexió ni el que s&amp;rsquo;escriu durant la sessió. Tot i que és possible atacar aquest tipus de sistema mitjançant un atac de replay i manipular d&amp;rsquo;aquesta manera la informació entre destinacions.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
