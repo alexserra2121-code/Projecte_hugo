@@ -2,7 +2,7 @@
 title: "Curiositats sobre Linux 2"
 date: 2026-10-11
 draft: false
-summary: "Descobreix curiositats, ordres bàsiques i projectes d'automatització amb Linux."
+summary: "Descobreix curiositats, ordres bàsiques i projectes d'automatització amb Linux. (Part 2)"
 ---
 
 # **Com funcionen els usuàris, grups i els permisos d'aquests al accedir arxius en Linux?**

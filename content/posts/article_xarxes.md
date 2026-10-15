@@ -2,7 +2,7 @@
 title: "Curiositats sobre xarxes"
 date: 2026-10-11
 draft: false
-summary: "Descobreix curiositats, ordres bàsiques i projectes d'automatització amb Linux."
+summary: "Descobreix curiositats, protocols, OSI..."
 ---
 
 # **Curiositats sobre Xarxes TCP/IP**

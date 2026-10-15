@@ -2,7 +2,7 @@
 title: "Curiositats sobre xarxes 2"
 date: 2026-10-10
 draft: false
-summary: "Descobreix curiositats, ordres bàsiques i projectes d'automatització amb Linux."
+summary: "Que es el protocol DNS i com funciona"
 ---
 # **Curiositats sobre Xarxes DNS**
 
