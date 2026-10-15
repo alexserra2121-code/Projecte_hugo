@@ -27,14 +27,14 @@
       <link>http://localhost:1313/posts/article_linux.2/</link>
       <pubDate>Sun, 11 Oct 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/article_linux.2/</guid>
-      <description>Descobreix curiositats, ordres bàsiques i projectes d&amp;rsquo;automatització amb Linux.</description>
+      <description>Descobreix curiositats, ordres bàsiques i projectes d&amp;rsquo;automatització amb Linux. (Part 2)</description>
     </item>
     <item>
       <title>Curiositats sobre xarxes</title>
       <link>http://localhost:1313/posts/article_xarxes/</link>
       <pubDate>Sun, 11 Oct 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/article_xarxes/</guid>
-      <description>Descobreix curiositats, ordres bàsiques i projectes d&amp;rsquo;automatització amb Linux.</description>
+      <description>Descobreix curiositats, protocols, OSI&amp;hellip;</description>
     </item>
     <item>
       <title>Apache</title>
@@ -51,7 +51,7 @@
       <link>http://localhost:1313/posts/article_xarxes2/</link>
       <pubDate>Sat, 10 Oct 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/article_xarxes2/</guid>
-      <description>Descobreix curiositats, ordres bàsiques i projectes d&amp;rsquo;automatització amb Linux.</description>
+      <description>Que es el protocol DNS i com funciona</description>
     </item>
     <item>
       <title>Http</title>

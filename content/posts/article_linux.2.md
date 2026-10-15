@@ -17,7 +17,7 @@ En Linux, els usuaris són comptes que permeten identificar i controlar les pers
 
 Els usuaris tenen diferents permisos segons el seu tipus i els grups als quals pertanyen. El sistema diferencia principalment entre usuaris normals i l'usuari root, que té permisos d'administrador i pot realitzar pràcticament qualsevol acció sobre el sistema. Per gestionar els usuaris es poden utilitzar ordres com useradd, usermod, passwd i userdel. Els permisos sobre fitxers i directoris es controlen mitjançant els permisos de lectura (r), escriptura (w) i execució (x).
 
-![Esquema dels usuaris de Linux](/imatges/usuaris-linux.png)
+![Esquema dels usuaris de Linux](/static/imatges/usuaris-linux.png)
 
 ## ***Com funcionen els permisos?***
 
@@ -25,4 +25,4 @@ A Linux, els permisos serveixen per controlar **qui pot accedir, modificar o exe
 
 Per compartir fitxers amb altres usuaris, podem utilitzar els **grups de Linux**. Si diversos usuaris pertanyen al mateix grup, podem donar permisos al grup perquè tots els seus membres puguin accedir als fitxers compartits. Les ordres `chmod` i `chown` permeten modificar els permisos i el propietari d'un fitxer, mentre que `chgrp` permet canviar el grup associat. D'aquesta manera, podem controlar de forma segura quins usuaris poden **llegir, modificar o executar** els fitxers compartits.
 
-![Esquema de permisos de Linux](/imatges/permisos-linux.png)
+![Esquema de permisos de Linux](/static/imatges/permisos-linux.png)
