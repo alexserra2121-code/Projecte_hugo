@@ -23,4 +23,4 @@ Per exemple, quan escrivim www.exemple.com al navegador, l'ordinador envia una c
 5. El navegador utilitza aquesta IP per **connectar-se al servidor web**.
 6. El servidor web respon i el navegador mostra la **pàgina web**.
 
-![Imatge com funciona un DNS](/static/imatges/funciona-dns.png)
+![Imatge com funciona un DNS](/Projecte_hugo//imatges/funciona-dns.png)
